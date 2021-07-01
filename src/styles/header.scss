@@ -1,0 +1,15 @@
+.header-top{
+    background-color: #000;
+    .header-content-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            display: flex;
+            li{
+                list-style-type: none;
+                color: #fff;
+            }
+        }
+    }
+}
