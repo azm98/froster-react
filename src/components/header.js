@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export default class Header extends Component {
     render() {
@@ -10,17 +13,24 @@ export default class Header extends Component {
                             <div className="header-content-info">
                                 <ul>
                                     <li>
-                                    <i className="flaticon-telephone">
+                                        <i class="fas fa-phone"></i>
                                         Customer Support:+923350327579
-                                    </i>
                                     </li>
                                     <li>
-                                    <i className="flaticon-interface-1">
-                                        azmhaque.98@gmail.com
-                                    </i>
+                                        <i class="far fa-envelope"></i>
+                                        AZMHAQUE.98@gmail.com
                                     </li>
                                 </ul>
-                           
+                            </div>
+                            <div className="socialLinks">
+                            <ul>
+                                    <li>
+                                        <a><img src="\assets\img\facebook.png" alt="facebook link" width="20" height="30"/></a>
+                                    </li>
+                                    <li>
+                                        <a><img src="\assets\img\instagram.png" alt="instagram link" width="20" height="30"/></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
