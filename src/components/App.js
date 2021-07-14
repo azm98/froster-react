@@ -3,12 +3,12 @@ import CounterInput from './CounterInput';
 import CounterOutput from './CounterOutput';
 
 function App() {
-const [counter,setcounter] =  useState(0)
+
   return (
         < div className = "App" >
-        <CounterOutput counter={counter}/>
+        <CounterOutput />
         <br/>
-        <CounterInput setcounter={setcounter} counter={counter}/>
+        <CounterInput />
 
 
   {/* <ApolloProvider client={client}>

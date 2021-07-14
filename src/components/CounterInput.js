@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import React  from 'react';
+import {useDispatch} from 'react-redux'
 
 function CounterInput(props) {
-
+    const dispatch = useDispatch()
         return (
             <div>
-                <button onClick={()=>props.setcounter(props.counter + 1)}>+</button>
-                <button onClick={()=>props.setcounter(props.counter - 1)}>-</button>
+                <button onClick={()=>dispatch({
+                    type:'INCREMENT'
+                })}>+</button>
+                <button onClick={()=>dispatch({
+                    type:'DECREMENT'
+                })}>-</button>
             </div>
         );
 }
